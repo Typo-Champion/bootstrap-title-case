@@ -20,7 +20,7 @@ function handleTyping(event) {
     if (i === 0 || userInput[i - 1] === space) {
       // check if [i] is equal to zero
       // or
-      // check if userInput's previous index is an empty string with [i-1]
+      // check if userInput's previous index is an space with [i-1]
       answer = answer + userInput[i].toUpperCase();
       // current 'answer' is an empty string
       // = 
@@ -45,6 +45,10 @@ function handleTyping(event) {
 function handleTyping2(event) {
   let userInput2 = event.target.value;
   let answer = "";
+  let i = 0;
+
+
+
 
   answer = answer + userInput2;
 
